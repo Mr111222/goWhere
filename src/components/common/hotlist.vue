@@ -6,9 +6,10 @@
       <div class="content">
         <p>{{item.title}}</p>
         <p>{{item.desc| getxx}}</p>
-        <p class="detail"><router-link to="">查看详情</router-link></p>
+        <p class="detail"><router-link to="/home/hotcity">查看详情</router-link></p>
       </div>
     </div>
+    <!-- <router-view></router-view> -->
   </div>
 </template>
 <script>
