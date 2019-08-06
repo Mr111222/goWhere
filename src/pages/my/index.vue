@@ -37,7 +37,7 @@ export default {
   }
 }
 </script>
-<style lang="css">
+<style lang="css" scoped>
   .v-enter,
   .v-leave-to{
     opacity: 0;

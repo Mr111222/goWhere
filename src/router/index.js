@@ -4,15 +4,11 @@ import Home from '@/pages/home/index'
 import Learn from '@/pages/learn/index'
 import Play from '@/pages/play/index'
 import My from '@/pages/my/index'
+import hotCity from '@/components/common/hotdetail'
 import ChildHotCity from '@/pages/home/children/index'
 
 Vue.use(Router)
 
-const childs = [{
-  name: 'hotCity',
-  path:'/home/hotcity',
-  component: ChildHotCity
-}]
 
 export default new Router({
   scrollBehavior (to, from, savedPosition) {
@@ -23,7 +19,11 @@ export default new Router({
       path: '/home',
       name: 'home',
       component: Home,
-      children:[...childs]
+    },
+    {
+      path: '/home/hot/:id',
+      name: 'hotcity',
+      component: hotCity,
     },
     
     {
