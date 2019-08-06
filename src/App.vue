@@ -11,7 +11,6 @@
     </div>
   </div>
 </template>
-
 <script>
 import Headers from '@/components/common/header'
 import Footers from '@/components/common/footer'

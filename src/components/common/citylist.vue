@@ -33,7 +33,7 @@ export default {
     this.getCity()
   },
   computed:{
-    ...mapGetters(['num', 'defaultCity'])
+    ...mapGetters(['num', 'defaultCity'])  // 计算属性会被缓存，倘若数据没有变化，则会直接取来自缓存的
   },
   components: {
     Mao,
