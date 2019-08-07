@@ -73,7 +73,6 @@ export default {
     height:100%;
     z-index:999;
     .hotCity {
-      height:240px;
       h6{
         clear: both;
         margin:10px 0; 

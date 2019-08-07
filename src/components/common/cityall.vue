@@ -5,7 +5,7 @@
       <ul>
         <li v-for="item in citys" :key="item.key" :ref="item.key">
         <p class="title">{{item.key}}</p>
-        <p class="list_con" v-for="items in item.source" :key="items.key" @click="choiceCity(items.name)">{{items.name}}</p>
+        <p class="list_icon" v-for="items in item.source" :key="items.key" @click="choiceCity(items.name)">{{items.name}}</p>
         </li>
       </ul>
     </div>
@@ -65,6 +65,10 @@ export default {
     .title{
       font-weight:bold;
       background: #999;
+      line-height:44px;
+    }
+    .list_icon{
+      line-height:40px;
     }
   }
 </style>

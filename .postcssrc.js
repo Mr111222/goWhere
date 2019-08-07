@@ -1,14 +1,5 @@
 // https://github.com/michael-ciniawsky/postcss-load-config
 
-// module.exports = {
-//   "plugins": {
-//     "postcss-import": {},
-//     "postcss-url": {},
-//     // to edit target browsers: use "browserslist" field in package.json
-//     "autoprefixer": {}
-//   }
-// }
-
 module.exports = {
   "plugins": {
     "postcss-import": {},
@@ -29,5 +20,6 @@ module.exports = {
       mediaQuery: false       // (Boolean) Allow px to be converted in media queries.
     }, 
     "postcss-viewport-units":{}
+    // 参考链接:https://www.cnblogs.com/zhaobao1830/p/9431454.html
   }
 }
