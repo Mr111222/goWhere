@@ -51,6 +51,9 @@
   .iconlist{
    background: #fff;
   }
+  .hotlist{
+    height:100%;
+  }
   .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets{
     font-size: .12rem;
     left:45%;

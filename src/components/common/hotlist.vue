@@ -40,12 +40,14 @@ export default {
 <style lang="scss">
   .hot{
     background: #fff;
+    height:100%;
     .title{
+      padding-top: 20px;
       margin:20px 0px 10px 10px;
     }
     .list{
       clear: both;
-      height:100px;
+      height:200px;
       img{
         width:25%;
         height:auto;
@@ -55,10 +57,10 @@ export default {
         float: left;
         margin-left:10px;
         p{
-          line-height: 24px;
+          margin-top: 20px;
         }
         .detail{
-          width:80px;
+          width:120px;
           background: orange;
           border-radius: 5px;
           text-align: center;
