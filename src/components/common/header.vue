@@ -1,8 +1,8 @@
 <template>
 	<div class="headers">
 		<input type="text" placeholder="输入拼音或文字" @blur="isShowSeach = !isShowSeach" @focus="isShowSeach = !isShowSeach" class="inps">
-		<span>{{defaultCity}}</span>
-		<span @click="showList">△</span>
+		<span class="">{{defaultCity}}</span>
+		<span @click="showList" class="">△</span>
 		<cityList v-if="isShowCitylist"/>
 		<Search v-if="isShowSeach"/>
 	</div>
@@ -39,13 +39,21 @@ export default {
 <style lang="scss" scoped>
 	.headers{
 		width:100%;
-		height:44px;
+		height:80px;
 		color:#fff;
 		background:#12345f;
+		span:nth-child(1){
+			line-height: 80px;
+			margin-left:30px;
+		}
+		span:nth-child(2){
+			line-height: 80px;
+			margin-left:30px;
+		}
 		.inps{
 			width:70%;
-			height:20px;
-			margin:8px 0 0 20px;
+			height:40px;
+			margin-left:20px;
 		}
 	}
 </style>

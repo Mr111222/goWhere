@@ -19,7 +19,7 @@ export default {
   .mao{
     position: absolute;
     right:0;
-    top:140px;
+    top:280px;
     background: #ccc;
     text-align: center;
     z-index:99999999;
@@ -27,7 +27,7 @@ export default {
       width:20px;
       height:100%;
       li{
-        line-height:22px;
+        line-height:44px;
         color:black;
       }
     }

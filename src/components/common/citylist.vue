@@ -67,7 +67,7 @@ export default {
 <style lang="scss" scoped>
   .citys{
     position:fixed;
-    top:40px;
+    top:80px;
     background: #666;
     width:100%;
     height:100%;

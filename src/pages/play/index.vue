@@ -1,4 +1,10 @@
 
 <template>
-  <p>paly</p>
+  <div>
+    <p>asdasd</p>
+  </div>
 </template>
+<script>
+export default {
+}
+</script>

@@ -31,14 +31,14 @@ export default {
   flex-direction: column;
   height:100%;
   .header{
-    height:44px;
+    height:80px;
   }
   .routers{
     flex:1;
     overflow:auto
   }
   .footer{
-    height:44px;
+    height:80px;
   }
   slide-fade{
     position: absolute;
@@ -60,3 +60,10 @@ export default {
   }
 }
 </style>
+
+2019-08-06T14:25:02.494340Z 1 [Note] A temporary password is generated for root@localhost: g9Ff1K5v9u*2
+
+If you lose this password, please consult the section How to Reset the Root Password in the MySQL reference manual.
+
+{"K":"NAVGUJ8ZEVAPJAUW", "N":"52pojie", "O":"52pojie.cn", "DI":"MDFlM2IwNjY3YzdjMDdm", "T": 1565100814}
+

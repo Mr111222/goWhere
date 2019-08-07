@@ -11,16 +11,16 @@
 <style type="text/scss" lang="scss" scoped>
 	.footers{
 		width:100%;
-		height:44px;
+		height:80px;
 		text-align: center;
-		line-height:44px;
+		line-height:80px;
 		background: #349acd;
 		ul{
 			li{
 				float: left;
 				width:25%;
 				text-align:center;
-				line-height:44px;
+				line-height:80px;
 				a{
 					display:inline-block;
 					width:100%;
