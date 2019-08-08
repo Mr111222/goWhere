@@ -73,23 +73,6 @@ export default {
           })
         }
       })
-    },
-    async submit () {
-      let data = {
-        user:  this.username,
-        pass: this.password
-      }
-      let datas = await this.$http.post('/api/login', data)
-      if(datas.data.err === 0){
-        this.isLoad = true
-        setTimeout(()=>{
-          this.$store.dispatch('setUser', this.username)
-          this.$router.push({path: '/home'})
-          this.isLoad = false
-        },2000)
-      }else{
-        this.$toast(datas.data.message);
-      }
     }
   }
 }

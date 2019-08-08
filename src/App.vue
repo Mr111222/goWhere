@@ -22,8 +22,10 @@ export default {
   created () {
     if(window.localStorage.getItem('username')){
       this.$router.push({path: '/home'})
+      this.$store.dispatch('isLogFn', true)
     }else{
       this.$router.push({path: '/login'})
+      this.$store.dispatch('isLogFn', false)
     }
   },
   computed:{

@@ -17,7 +17,10 @@ const actions = {
   },
   setUser (ctx, parmas) {
     ctx.commit (types.setUser, parmas)
-  }
+  },
+  isLogFn (ctx, parmas) {
+    ctx.commit (types.isLogFn, parmas)
+  },
 }
 
 export default actions

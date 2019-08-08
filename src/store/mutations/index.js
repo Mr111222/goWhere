@@ -21,10 +21,13 @@ const mutations = {
   },
   [types.setUser] (state, parmas) {
     state.state.username = parmas
-    state.state.isLog = !state.state.isLog
+    state.state.isLog = true
     try {
       localStorage.username = parmas
     } catch (e) {}
-  }
+  },
+  [types.isLogFn] (state, parmas) {
+    state.state.isLog = parmas
+  },
 }
 export default mutations
