@@ -8,6 +8,9 @@ import axios from 'axios'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import 'swiper/dist/css/swiper.css'
 import '@/assets/fonts/iconfont.css'
+import Vant from 'vant'
+import 'vant/lib/index.css'
+Vue.use(Vant)
 Vue.use(VueAwesomeSwiper, /* { default global options } */)
 Vue.prototype.$http = axios
 Vue.config.productionTip = false

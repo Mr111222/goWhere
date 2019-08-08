@@ -18,6 +18,13 @@ const mutations = {
   },
   [types.showlist] (state) {
     state.state.isShowCitylist = !state.state.isShowCitylist
+  },
+  [types.setUser] (state, parmas) {
+    state.state.username = parmas
+    state.state.isLog = !state.state.isLog
+    try {
+      localStorage.username = parmas
+    } catch (e) {}
   }
 }
 export default mutations

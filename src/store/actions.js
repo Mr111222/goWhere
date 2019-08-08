@@ -14,6 +14,9 @@ const actions = {
   },
   showList (ctx) {
     ctx.commit (types.showlist)
+  },
+  setUser (ctx, parmas) {
+    ctx.commit (types.setUser, parmas)
   }
 }
 

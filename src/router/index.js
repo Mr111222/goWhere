@@ -6,6 +6,7 @@ import Play from '@/pages/play/index'
 import My from '@/pages/my/index'
 import hotCity from '@/components/common/hotdetail'
 import ChildHotCity from '@/pages/home/children/index'
+import Login from '@/pages/login/index'
 
 Vue.use(Router)
 
@@ -15,6 +16,11 @@ export default new Router({
     return { x: 0, y: 0 }
   },
   routes: [
+    {
+      path: '/login',
+      name: 'login',
+      component: Login,
+    },
     {
       path: '/home',
       name: 'home',
@@ -43,8 +49,8 @@ export default new Router({
     },
     {
     	path:'*',
-    	component:Home,
-    	redirect:'/home'
+    	component:Login,
+    	redirect:'/login'
     }
   ]
 })

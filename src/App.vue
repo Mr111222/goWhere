@@ -1,6 +1,6 @@
 <template>
   <div id="app" class="app">
-    <div class="header">
+    <div class="header" v-if="isLoger">
       <headers />
     </div>
     <div class="routers">
@@ -8,7 +8,7 @@
         <router-view></router-view>
       </transition>
     </div>
-    <div class="footer">
+    <div class="footer" v-if="isLoger">
        <footers />
     </div>
   </div>
@@ -16,12 +16,23 @@
 <script>
 import Headers from '@/components/common/header'
 import Footers from '@/components/common/footer'
+import {mapGetters} from 'vuex'
 export default {
   name: 'App',
+  created () {
+    if(window.localStorage.getItem('username')){
+      this.$router.push({path: '/home'})
+    }else{
+      this.$router.push({path: '/login'})
+    }
+  },
+  computed:{
+    ...mapGetters(['isLoger'])
+  },
   components: {
     Headers,
     Footers
-  }
+  },
 }
 </script>
 
@@ -59,11 +70,9 @@ export default {
     opacity: 0;
   }
 }
+// 2019-08-06T14:25:02.494340Z 1 [Note] A temporary password is generated for root@localhost: g9Ff1K5v9u*2
+// If you lose this password, please consult the section How to Reset the Root Password in the MySQL reference manual.
 </style>
 
-2019-08-06T14:25:02.494340Z 1 [Note] A temporary password is generated for root@localhost: g9Ff1K5v9u*2
 
-If you lose this password, please consult the section How to Reset the Root Password in the MySQL reference manual.
-
-{"K":"NAVGUJ8ZEVAPJAUW", "N":"52pojie", "O":"52pojie.cn", "DI":"MDFlM2IwNjY3YzdjMDdm", "T": 1565100814}
 
