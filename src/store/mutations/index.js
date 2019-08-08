@@ -19,6 +19,7 @@ const mutations = {
   [types.showlist] (state) {
     state.state.isShowCitylist = !state.state.isShowCitylist
   },
+  //  存储当前用户
   [types.setUser] (state, parmas) {
     state.state.username = parmas
     state.state.isLog = true
@@ -26,6 +27,7 @@ const mutations = {
       localStorage.username = parmas
     } catch (e) {}
   },
+  // 修改登陆后的状态
   [types.isLogFn] (state, parmas) {
     state.state.isLog = parmas
   },

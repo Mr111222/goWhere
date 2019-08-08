@@ -15,9 +15,12 @@ const actions = {
   showList (ctx) {
     ctx.commit (types.showlist)
   },
+  // 存储当前用户
   setUser (ctx, parmas) {
     ctx.commit (types.setUser, parmas)
   },
+
+  // 登录状态是否显示头部和尾部
   isLogFn (ctx, parmas) {
     ctx.commit (types.isLogFn, parmas)
   },
