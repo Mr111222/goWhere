@@ -1,8 +1,9 @@
 <template>
 	<div class="headers">
+		<span @click="goBack">返回</span>
 		<input type="text" placeholder="输入拼音或文字" @blur="isShowSeach = !isShowSeach" @focus="isShowSeach = !isShowSeach" class="inps">
 		<span class="">{{defaultCity}}</span>
-		<span @click="showList" class="">△</span>
+		<span @click="showList" :class="upClass" class="iocns"><i class="iconfont">&#xe624;</i></span>
 		<cityList v-if="isShowCitylist"/>
 		<Search v-if="isShowSeach"/>
 	</div>
@@ -23,7 +24,10 @@ export default {
 	},
 
 	computed: {
-		...mapGetters(['defaultCity', 'isShowCitylist'])
+		...mapGetters(['defaultCity', 'isShowCitylist']),
+		upClass () {
+			return this.isShowCitylist ? 'up' : ''
+		}
 	},
 	methods: {
 		...mapActions(['showList']),
@@ -32,6 +36,9 @@ export default {
 		},
 		getSearch () {
 			this.isShowSeach = !this.isShowSeach
+		},
+		goBack () {
+			this.$router.go(-1)
 		}
 	}
 }
@@ -54,6 +61,30 @@ export default {
 			width:70%;
 			height:40px;
 			margin-left:20px;
+		}
+		.iocns{
+			display:inline-block;
+			animation: downs .5s ease forwards;
+		}
+		.up{
+			animation: ups .5s ease forwards;
+		}
+		
+	}
+	@keyframes ups{
+		from{
+			transform: rotateZ(0deg)
+		}
+		to{
+			transform: rotateZ(-180deg)
+		}
+	}
+		@keyframes downs{
+		from{
+			transform: rotateZ(-180deg)
+		}
+		to{
+			transform: rotateZ(0deg)
 		}
 	}
 </style>

@@ -7,6 +7,7 @@ import store from './store'
 import axios from 'axios'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import 'swiper/dist/css/swiper.css'
+import '@/assets/fonts/iconfont.css'
 Vue.use(VueAwesomeSwiper, /* { default global options } */)
 Vue.prototype.$http = axios
 Vue.config.productionTip = false
