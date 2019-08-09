@@ -24,6 +24,8 @@
 				a{
 					display:inline-block;
 					width:100%;
+					color:#fff;
+
 				}
 			}
 			.router-link-active{
